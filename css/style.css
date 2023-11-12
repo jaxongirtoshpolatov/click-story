@@ -4,6 +4,7 @@
   --dark-grey: #333;
   --grey: #686868;
   --blue: #456DBB;
+  --white: #FFF;
 }
 body {
   margin: 0;
@@ -245,6 +246,100 @@ footer .footer__top {
 
 }
 
+/* login */
+.login {
+  height: 100vh;
+}
+
+.login .container {
+  margin: 0;
+  padding: 0;
+}
+.login form {
+  width: 434px;
+  display: inline;
+  flex-direction: column;
+  padding: 32px;
+  border-radius: 5px;
+  background: var(--white);
+  box-shadow: 0px 4px 10px 0px #CEE0FF;
+}
+
+.login .form__title {
+  margin-bottom: 32px;
+  color: var(--blue, #456DBB);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.login .reset-password {
+ margin: 32px 0;
+ display: inline-block;
+}
+
+.login label {
+  color: var(--dark-grey, #333);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.login input {
+  padding: 16px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.login button[type="submit"] {
+  width: 100%;
+  padding: 12px 18px;
+}
+
+.login .or {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.modal-content {
+  width: 0;
+}
+
+.modal-body {
+  width: 434px;
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background: var(--white);
+  padding: 0;
+  width: 434px;
+  height: 564px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  padding-right:10px;
+  font-size: 30px;
+  /* width: 20px; */
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Orqa fon rangi */
+  z-index: -1; /* Modalning ustiga chiqqan */
+}
+
+.reset__password_title {
+  text-align: center;
+}
+
+.phone_number {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.resetPassword .modal-body {
+  height: 337px;
+}
 
 
 @media (min-width: 1440px) {
